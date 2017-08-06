@@ -1,0 +1,269 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "OSKY Pannello di Controllo"
+Date "18 may 2016"
+Rev "00"
+Comp "SaLe"
+Comment1 "Sezione 220Vac"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BULB D?
+U 1 1 573C0A15
+P 5050 3500
+F 0 "D?" H 5350 3600 50  0000 C CNN
+F 1 "Rete" H 5050 3200 50  0000 C CNN
+F 2 "~" H 5050 3500 60  0000 C CNN
+F 3 "~" H 5050 3500 60  0000 C CNN
+	1    5050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L BULB D?
+U 1 1 573C0A24
+P 6050 3500
+F 0 "D?" H 6350 3600 50  0000 C CNN
+F 1 "Barca" H 6050 3200 50  0000 C CNN
+F 2 "~" H 6050 3500 60  0000 C CNN
+F 3 "~" H 6050 3500 60  0000 C CNN
+	1    6050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3500 4550 3500
+Wire Wire Line
+	4550 3500 4550 4400
+Wire Wire Line
+	4550 4400 3650 4400
+Wire Wire Line
+	3650 4400 3650 4150
+Wire Wire Line
+	3650 4150 3600 4150
+Wire Wire Line
+	3600 4150 3500 4100
+Wire Wire Line
+	5400 3500 5400 4300
+Wire Wire Line
+	5400 4300 4050 4300
+Wire Wire Line
+	4050 4300 4050 4150
+Wire Wire Line
+	4050 4150 4000 4150
+Wire Wire Line
+	4000 4150 3900 4100
+Wire Wire Line
+	5700 3500 5700 2800
+Wire Wire Line
+	5700 2800 4050 2800
+Wire Wire Line
+	4050 2800 4050 3000
+Wire Wire Line
+	4050 3000 3900 3000
+Wire Wire Line
+	6400 3500 6400 2700
+Wire Wire Line
+	6400 2700 3650 2700
+Wire Wire Line
+	3650 2700 3650 3000
+Wire Wire Line
+	3650 3000 3500 3000
+$Comp
+L SW_DBL_CL_6A SW?
+U 1 1 573C0D4D
+P 7450 3500
+F 0 "SW?" H 7450 3600 70  0000 C CNN
+F 1 "Carica Batterie" H 7450 3950 70  0000 C CNN
+F 2 "~" H 7450 3500 60  0000 C CNN
+F 3 "~" H 7450 3500 60  0000 C CNN
+	1    7450 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_DBL_CL_10A SW?
+U 1 1 573C0E29
+P 8950 3500
+F 0 "SW?" H 8950 3600 70  0000 C CNN
+F 1 "Prese" H 8950 3950 70  0000 C CNN
+F 2 "~" H 8950 3500 60  0000 C CNN
+F 3 "~" H 8950 3500 60  0000 C CNN
+	1    8950 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_DBL_CL_10A SW?
+U 1 1 573C0E3D
+P 10250 3550
+F 0 "SW?" H 10250 3650 70  0000 C CNN
+F 1 "Riserva" H 10250 4000 70  0000 C CNN
+F 2 "~" H 10250 3550 60  0000 C CNN
+F 3 "~" H 10250 3550 60  0000 C CNN
+	1    10250 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SWITCH_DUBLE_DIFF-25A SW?
+U 1 1 573C0FFC
+P 3700 3500
+F 0 "SW?" H 3700 3600 70  0000 C CNN
+F 1 "Generale Salvavita" H 3700 2800 70  0000 C CNN
+F 2 "~" H 3700 3500 60  0000 C CNN
+F 3 "~" H 3700 3500 60  0000 C CNN
+	1    3700 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 3000 7300 3000
+Wire Wire Line
+	7150 3000 7150 2600
+Wire Wire Line
+	7150 2600 3900 2600
+Wire Wire Line
+	3900 2600 3900 3000
+Wire Wire Line
+	8650 3000 8800 3000
+Wire Wire Line
+	8650 3000 8650 2600
+Wire Wire Line
+	8650 2600 7300 2600
+Wire Wire Line
+	7300 2600 7300 3000
+Connection ~ 7250 3000
+Wire Wire Line
+	10050 3050 10050 2600
+Wire Wire Line
+	10050 2600 8800 2600
+Wire Wire Line
+	8800 2600 8800 3000
+Connection ~ 8750 3000
+Wire Wire Line
+	10450 3050 10450 2450
+Wire Wire Line
+	10450 2450 9200 2450
+Wire Wire Line
+	9200 2450 9200 3000
+Wire Wire Line
+	9200 3000 9050 3000
+Wire Wire Line
+	9050 3000 9050 2450
+Wire Wire Line
+	9050 2450 7700 2450
+Wire Wire Line
+	7700 2450 7700 3000
+Wire Wire Line
+	7700 3000 7550 3000
+Connection ~ 9150 3000
+Wire Wire Line
+	7550 3000 7550 2450
+Wire Wire Line
+	7550 2450 3500 2450
+Wire Wire Line
+	3500 2450 3500 3000
+Connection ~ 7650 3000
+Wire Wire Line
+	3500 4100 3500 4400
+Wire Wire Line
+	3500 4400 2950 4400
+$Comp
+L CON_9_PIN C
+U 1 1 573C17EA
+P 1950 2000
+F 0 "C ?" H 2300 1850 60  0000 C CNN
+F 1 "CON_9_PIN" H 1600 2000 60  0000 C CNN
+F 2 "" H 1950 2000 60  0000 C CNN
+F 3 "" H 1950 2000 60  0000 C CNN
+	1    1950 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4400 2950 1500
+Wire Wire Line
+	2950 1500 2500 1500
+Wire Wire Line
+	3900 4100 3900 4300
+Wire Wire Line
+	3900 4300 750  4300
+Wire Wire Line
+	750  4300 750  1500
+Wire Wire Line
+	750  1500 1400 1500
+Wire Wire Line
+	7250 4600 7250 4000
+Wire Wire Line
+	2050 4600 7250 4600
+Wire Wire Line
+	7650 4650 7650 4000
+Wire Wire Line
+	900  4650 7650 4650
+Wire Wire Line
+	2050 4600 2050 1700
+Wire Wire Line
+	900  4650 900  1700
+Wire Wire Line
+	900  1700 1400 1700
+Wire Wire Line
+	8750 4000 8750 4900
+Wire Wire Line
+	8750 4900 2750 4900
+Wire Wire Line
+	2750 4900 2750 1700
+Wire Wire Line
+	2750 1700 2500 1700
+Wire Wire Line
+	2500 1900 2700 1900
+Wire Wire Line
+	2700 1900 2700 4950
+Wire Wire Line
+	2700 4950 9150 4950
+Wire Wire Line
+	9150 4950 9150 4000
+Wire Wire Line
+	10450 4050 10450 5200
+Wire Wire Line
+	10450 5200 1950 5200
+Wire Wire Line
+	1950 5200 1950 2250
+Wire Wire Line
+	1400 1900 1200 1900
+Wire Wire Line
+	1200 1900 1200 5250
+Wire Wire Line
+	1200 5250 10050 5250
+Wire Wire Line
+	10050 5250 10050 4050
+$EndSCHEMATC
